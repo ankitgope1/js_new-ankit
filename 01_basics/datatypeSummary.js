@@ -26,4 +26,30 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof outsideTemp);
+// console.log(typeof outsideTemp);
+
+
+
+
+// ******************************************** Memory Allocations *********************************
+
+
+// Stack (Primitive), Heap (Non-primitive)
+
+let myWebsite = "ankitdotcom"
+let anotherWebsite = myWebsite
+anotherWebsite = "Helloankit"
+console.log(anotherWebsite);
+console.log(myWebsite)
+
+let userOne = {
+    email: "ankit@gmail.com",
+    upi: "ankit@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "rahul@gmail.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
